@@ -1,0 +1,44 @@
+[
+  {
+    "email": "customer@quickt.tg",
+    "password": "password123",
+    "full_name": "Kodjo Mensah",
+    "phone": "+22890000001",
+    "city": "Lome",
+    "role": "customer"
+  },
+  {
+    "email": "customer2@quickt.tg",
+    "password": "password123",
+    "full_name": "Ama Koffi",
+    "phone": "+22890000002",
+    "city": "Kara",
+    "role": "customer"
+  },
+  {
+    "email": "agency@quickt.tg",
+    "password": "password123",
+    "full_name": "Yao Agbeko",
+    "phone": "+22890000003",
+    "city": "Lome",
+    "role": "agency_staff",
+    "agency_name": "STIF Transport"
+  },
+  {
+    "email": "agency2@quickt.tg",
+    "password": "password123",
+    "full_name": "Kossi Amegah",
+    "phone": "+22890000004",
+    "city": "Sokode",
+    "role": "agency_staff",
+    "agency_name": "ABC Transport Togo"
+  },
+  {
+    "email": "admin@quickt.tg",
+    "password": "password123",
+    "full_name": "Admin QuickT",
+    "phone": "+22890000005",
+    "city": "Lome",
+    "role": "admin"
+  }
+]

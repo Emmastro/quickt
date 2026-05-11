@@ -1,0 +1,49 @@
+[
+  {
+    "name": "STIF Transport",
+    "slug": "stif-transport",
+    "description": "Premier service de transport interurbain au Togo. Confort, securite et ponctualite garantis.",
+    "phone": "+22890123456",
+    "email": "contact@stif-togo.com",
+    "address": "Boulevard du 13 Janvier, Lome",
+    "city": "Lome",
+    "region": "Maritime",
+    "status": "approved",
+    "approved_at": "2025-01-15T10:00:00Z"
+  },
+  {
+    "name": "Rakieta Togo",
+    "slug": "rakieta-togo",
+    "description": "Voyagez en toute serenite avec Rakieta. Desserte de toutes les grandes villes du Togo.",
+    "phone": "+22891234567",
+    "email": "info@rakieta-togo.com",
+    "address": "Avenue de la Liberation, Lome",
+    "city": "Lome",
+    "region": "Maritime",
+    "status": "approved",
+    "approved_at": "2025-02-01T08:00:00Z"
+  },
+  {
+    "name": "ABC Transport Togo",
+    "slug": "abc-transport-togo",
+    "description": "Transport de qualite pour vos deplacements au Togo et en Afrique de l'Ouest.",
+    "phone": "+22892345678",
+    "email": "contact@abc-transport.tg",
+    "address": "Rue du Commerce, Sokode",
+    "city": "Sokode",
+    "region": "Centrale",
+    "status": "approved",
+    "approved_at": "2025-03-10T14:00:00Z"
+  },
+  {
+    "name": "Trans Sahel",
+    "slug": "trans-sahel",
+    "description": "Specialiste du transport Nord-Togo. Liaisons quotidiennes vers Kara et Dapaong.",
+    "phone": "+22893456789",
+    "email": "info@trans-sahel.tg",
+    "address": "Quartier Tomdè, Kara",
+    "city": "Kara",
+    "region": "Kara",
+    "status": "pending"
+  }
+]

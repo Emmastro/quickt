@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+.venv/
+.python-version
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+coverage.xml
+
+# Node / Vite
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+.eslintcache
+
+# Vitest / Jest
+coverage/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Backend runtime
+uploads/
+*.sqlite
+*.sqlite3
+*.db
+
+# Build artifacts
+*.log
+*.tar
+*.tar.gz
+*-build/
+build/
+
+# Local seed/state markers
+.seeded

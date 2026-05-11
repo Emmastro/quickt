@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"></head>
+<body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+  <div style="background: #1e40af; padding: 20px; text-align: center; border-radius: 8px 8px 0 0;">
+    <h1 style="color: white; margin: 0;">QuickT</h1>
+  </div>
+  <div style="background: #f9fafb; padding: 30px; border-radius: 0 0 8px 8px;">
+    <p>Bonjour {{PASSENGER_NAME}},</p>
+    <p>Votre billet a ete confirme avec succes!</p>
+    <div style="background: white; border: 2px dashed #1e40af; border-radius: 8px; padding: 20px; margin: 20px 0;">
+      <p><strong>Code du billet:</strong> {{TICKET_CODE}}</p>
+      <p><strong>Trajet:</strong> {{ORIGIN}} → {{DESTINATION}}</p>
+      <p><strong>Date:</strong> {{DEPARTURE_DATE}}</p>
+      <p><strong>Heure:</strong> {{DEPARTURE_TIME}}</p>
+      <p><strong>Siege:</strong> {{SEAT_NUMBER}}</p>
+      <p><strong>Agence:</strong> {{AGENCY_NAME}}</p>
+    </div>
+    <p>Presentez votre code QR a l'embarquement. Bon voyage!</p>
+  </div>
+</body>
+</html>

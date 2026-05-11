@@ -1,0 +1,47 @@
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: quickt-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
+      POSTGRES_DB: quickt_db
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d quickt_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: ./backend
+    container_name: quickt-backend
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:${DB_PASSWORD:-postgres}@db:5432/quickt_db
+      SECRET_KEY: ${SECRET_KEY:-change-me-in-production}
+      APP_ENV: ${APP_ENV:-production}
+      CORS_ORIGINS: '["http://localhost", "http://localhost:80"]'
+      EMAIL_ENABLED: ${EMAIL_ENABLED:-false}
+    ports:
+      - "8095:8095"
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: ""
+    container_name: quickt-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+
+volumes:
+  pgdata:

@@ -1,0 +1,72 @@
+[
+  {
+    "_ref": "lome-kpalime",
+    "origin_city": "Lome",
+    "destination_city": "Kpalime",
+    "distance_km": 120,
+    "estimated_duration_minutes": 150
+  },
+  {
+    "_ref": "lome-atakpame",
+    "origin_city": "Lome",
+    "destination_city": "Atakpame",
+    "distance_km": 161,
+    "estimated_duration_minutes": 180
+  },
+  {
+    "_ref": "lome-sokode",
+    "origin_city": "Lome",
+    "destination_city": "Sokode",
+    "distance_km": 338,
+    "estimated_duration_minutes": 300
+  },
+  {
+    "_ref": "lome-kara",
+    "origin_city": "Lome",
+    "destination_city": "Kara",
+    "distance_km": 420,
+    "estimated_duration_minutes": 360
+  },
+  {
+    "_ref": "lome-dapaong",
+    "origin_city": "Lome",
+    "destination_city": "Dapaong",
+    "distance_km": 620,
+    "estimated_duration_minutes": 540
+  },
+  {
+    "_ref": "sokode-kara",
+    "origin_city": "Sokode",
+    "destination_city": "Kara",
+    "distance_km": 180,
+    "estimated_duration_minutes": 150
+  },
+  {
+    "_ref": "kara-dapaong",
+    "origin_city": "Kara",
+    "destination_city": "Dapaong",
+    "distance_km": 200,
+    "estimated_duration_minutes": 180
+  },
+  {
+    "_ref": "lome-tsevie",
+    "origin_city": "Lome",
+    "destination_city": "Tsevie",
+    "distance_km": 35,
+    "estimated_duration_minutes": 45
+  },
+  {
+    "_ref": "lome-aneho",
+    "origin_city": "Lome",
+    "destination_city": "Aneho",
+    "distance_km": 45,
+    "estimated_duration_minutes": 60
+  },
+  {
+    "_ref": "atakpame-sokode",
+    "origin_city": "Atakpame",
+    "destination_city": "Sokode",
+    "distance_km": 177,
+    "estimated_duration_minutes": 150
+  }
+]

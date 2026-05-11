@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-700 text-white font-semibold px-6 py-3 rounded-xl
+           hover:bg-primary-800 active:bg-primary-900 transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-primary-700 font-semibold px-6 py-3 rounded-xl
+           border-2 border-primary-200 hover:border-primary-400 hover:bg-primary-50
+           transition-all duration-200;
+  }
+
+  .btn-accent {
+    @apply bg-accent-500 text-white font-semibold px-6 py-3 rounded-xl
+           hover:bg-accent-600 active:bg-accent-700 transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-accent-400 focus:ring-offset-2;
+  }
+
+  .btn-danger {
+    @apply bg-red-500 text-white font-semibold px-6 py-3 rounded-xl
+           hover:bg-red-600 transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 bg-white
+           focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none
+           transition-all duration-200 placeholder:text-gray-400;
+  }
+
+  .status-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold;
+  }
+
+  /* Ticket card with perforated edge */
+  .ticket-card {
+    @apply bg-white rounded-2xl overflow-hidden relative;
+    border: 2px solid #e5e7eb;
+  }
+  .ticket-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 30%;
+    width: 2px;
+    border-right: 2px dashed #d1d5db;
+  }
+
+  /* Seat map styles */
+  .seat {
+    @apply w-9 h-9 rounded-lg text-xs font-medium flex items-center justify-center
+           cursor-pointer transition-all duration-150;
+  }
+  .seat-available {
+    @apply bg-gray-100 text-gray-600 hover:bg-primary-100 hover:text-primary-700 border border-gray-200;
+  }
+  .seat-selected {
+    @apply bg-primary-600 text-white border-2 border-primary-700 shadow-md scale-105;
+  }
+  .seat-taken {
+    @apply bg-red-100 text-red-400 cursor-not-allowed border border-red-200;
+  }
+
+  /* Route display line */
+  .route-line {
+    @apply flex items-center gap-2;
+  }
+  .route-line::before {
+    content: '';
+    @apply flex-1 h-0.5 bg-primary-300;
+  }
+
+  /* Bottom navigation */
+  .bottom-nav {
+    @apply fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-50;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Top bar */
+  .app-top-bar {
+    @apply sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 h-14;
+    padding-top: env(safe-area-inset-top);
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

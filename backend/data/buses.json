@@ -1,0 +1,34 @@
+[
+  {
+    "_ref": "stif-bus-1",
+    "agency_name": "STIF Transport",
+    "plate_number": "TG-1001-AA",
+    "model": "Mercedes Tourismo",
+    "capacity": 50,
+    "amenities": ["wifi", "ac", "usb", "reclining_seats"]
+  },
+  {
+    "_ref": "stif-bus-2",
+    "agency_name": "STIF Transport",
+    "plate_number": "TG-1002-AA",
+    "model": "Volvo 9700",
+    "capacity": 50,
+    "amenities": ["wifi", "ac", "usb", "tv"]
+  },
+  {
+    "_ref": "rakieta-bus-1",
+    "agency_name": "Rakieta Togo",
+    "plate_number": "TG-2001-BB",
+    "model": "Scania Touring",
+    "capacity": 45,
+    "amenities": ["ac", "usb"]
+  },
+  {
+    "_ref": "abc-bus-1",
+    "agency_name": "ABC Transport Togo",
+    "plate_number": "TG-3001-CC",
+    "model": "Mercedes Travego",
+    "capacity": 50,
+    "amenities": ["wifi", "ac"]
+  }
+]
