@@ -26,7 +26,7 @@ services:
       DATABASE_URL: postgresql+asyncpg://postgres:${DB_PASSWORD:-postgres}@db:5432/quickt_db
       SECRET_KEY: ${SECRET_KEY:-change-me-in-production}
       APP_ENV: ${APP_ENV:-production}
-      CORS_ORIGINS: '["http://localhost", "http://localhost:80"]'
+      CORS_ORIGINS: '["http://quickt.dessartstudio.com"]'
       EMAIL_ENABLED: ${EMAIL_ENABLED:-false}
     ports:
       - "8095:8095"
